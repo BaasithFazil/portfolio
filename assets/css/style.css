@@ -88,7 +88,7 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: black;
   overflow-y: auto;
 }
 
@@ -992,10 +992,14 @@ section {
 
 .contact .php-email-form input {
   height: 44px;
+  caret-color: rgb(230, 230, 51);
+  border-color: rgb(255, 244, 83);
 }
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
+  caret-color: rgb(230, 230, 51);
+  border-color: rgb(255, 244, 83);
 }
 
 .contact .php-email-form button[type=submit] {
@@ -1090,7 +1094,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background:black;
 }
 
 #footer .copyright {
