@@ -1,39 +1,45 @@
-/**
-* Template Name: iPortfolio - v3.10.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 20px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+/*#149ddd */ 
 * {
   font-family: 'Poppins';
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Poppins';
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: rgb(197, 179, 13);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color:  yellow;
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Poppins', ;
 }
 
 /*--------------------------------------------------------------
@@ -46,7 +52,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: rgb(238, 241, 25);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -60,7 +66,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: rgb(233, 236, 24);
   color: #fff;
 }
 
@@ -89,8 +95,8 @@ h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  width: 80px;
+  border: 2px solid #2c2f3f;
 }
 
 #header .profile h1 {
@@ -189,11 +195,8 @@ h6 {
   color: #fff;
 }
 
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover>a i {
-  color: #149ddd;
+.nav-menu a:hover i,.nav-menu .active i,.nav-menu .active:focus i,.nav-menu li:hover>a i {
+  color: #fff;
 }
 
 /* Mobile Navigation */
@@ -206,7 +209,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: black;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -272,7 +275,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid black;
 }
 
 @media (min-width: 1024px) {
@@ -316,7 +319,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: black
 }
 
 .section-title h2::after {
@@ -325,7 +328,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: rgb(230, 230, 15);
   bottom: 0;
   left: 0;
 }
@@ -340,7 +343,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: black;
 }
 
 .about .content ul {
@@ -361,7 +364,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: yellow;
   line-height: 0;
 }
 
@@ -384,7 +387,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: rgb(230, 230, 29);
   float: left;
   line-height: 0;
 }
@@ -394,7 +397,7 @@ section {
   line-height: 40px;
   display: block;
   font-weight: 700;
-  color: #050d18;
+  color: black;
   margin-left: 60px;
 }
 
@@ -403,7 +406,7 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: rgb(117, 117, 117);
 }
 
 .facts .count-box a {
@@ -428,6 +431,8 @@ section {
   display: block;
   background: none;
   border-radius: 0;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .skills .progress .skill {
@@ -437,7 +442,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: black;
 }
 
 .skills .progress .skill .val {
@@ -446,7 +451,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: #f2f5e0;
   height: 10px;
 }
 
@@ -454,7 +459,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: Yellow;
 }
 
 /*--------------------------------------------------------------
@@ -465,13 +470,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: black;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid yellow;
   position: relative;
 }
 
@@ -481,13 +486,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: rgb(122, 122, 122);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: rgb(233, 233, 86);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -515,7 +520,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid rgb(204, 204, 21);
 }
 
 /*--------------------------------------------------------------
@@ -550,7 +555,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: yellow;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -593,17 +598,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
+  background: rgb(248, 248, 59);
+  transition: 0.5s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: yellow;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid yellow;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -640,11 +645,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: yellow;
 }
 
 .portfolio-details .portfolio-info {
@@ -698,10 +703,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: rgb(231, 231, 32);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid rgb(235, 235, 16);
 }
 
 .services .icon i {
@@ -715,7 +720,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: yellow;
 }
 
 .services .title {
@@ -730,7 +735,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: yellow;
 }
 
 .services .description {
@@ -847,11 +852,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: yellow;
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #f5f5f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -864,14 +869,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: black;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: grey;
 }
 
 .contact .info .email p {
@@ -898,14 +903,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: yellow;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: yellow;
   color: #fff;
 }
 
@@ -922,7 +927,7 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: yellow;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -931,7 +936,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: yellow;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -994,7 +999,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: rgb(238, 238, 76);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1003,7 +1008,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: yellow;
 }
 
 @-webkit-keyframes animate-loading {
