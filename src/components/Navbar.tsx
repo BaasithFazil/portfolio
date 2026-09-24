@@ -47,7 +47,8 @@ export default function Navbar() {
   }, [open])
 
   return (
-    <motion.header
+    <>
+      <motion.header
       initial={{ y: reduceMotion ? 0 : -72, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
@@ -114,6 +115,7 @@ export default function Navbar() {
           {open ? <X className="size-5" aria-hidden="true" /> : <Menu className="size-5" aria-hidden="true" />}
         </button>
       </nav>
+      </motion.header>
 
       <AnimatePresence>
         {open && (
@@ -123,9 +125,9 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-16 z-50 flex flex-col bg-ink-950/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 top-16 z-50 flex flex-col overflow-y-auto overscroll-contain bg-ink-950 md:hidden"
           >
-            <ul className="wrap flex flex-1 flex-col justify-center gap-1 py-8">
+            <ul className="wrap my-auto flex w-full flex-col gap-1 py-8">
               {NAV_LINKS.map((link, i) => {
                 const isActive = active === link.href.replace("#", "")
                 return (
@@ -164,6 +166,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   )
 }
