@@ -159,11 +159,6 @@ function FloatingBadges() {
 
 const headingWords = ["Hi,", "I'm", "Baasith."]
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } },
-}
-
 const item = {
   hidden: { opacity: 0, y: 24 },
   show: {
@@ -171,16 +166,6 @@ const item = {
     y: 0,
     transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
   },
-}
-
-const headline = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.14, delayChildren: 0.35 } },
-}
-
-const word = {
-  hidden: { y: "115%" },
-  show: { y: "0%", transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1] as const } },
 }
 
 export default function Hero() {
@@ -207,9 +192,8 @@ export default function Hero() {
       <FloatingBadges />
 
       <div className="wrap relative grid items-center gap-14 py-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-        <motion.div variants={container} initial="hidden" animate="show">
+        <motion.div>
           <motion.p
-            variants={item}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-ink-800/60 px-3.5 py-1.5 font-mono text-xs tracking-wide text-mist-300"
           >
             <span className="relative flex size-2">
@@ -219,22 +203,15 @@ export default function Hero() {
             {SITE.role}
           </motion.p>
 
-          <motion.h1
-            variants={headline}
-            className="font-display text-5xl font-semibold tracking-tight text-mist-100 sm:text-6xl lg:text-7xl"
-          >
+          <h1 className="font-display text-5xl font-semibold tracking-tight text-mist-100 sm:text-6xl lg:text-7xl">
             <span className="sr-only">Hi, I'm Baasith.</span>
             <span aria-hidden="true" className="block overflow-hidden pb-1">
-              <motion.span variants={word} className="block">
-                {headingWords[0]} {headingWords[1]}
-              </motion.span>
+              <span className="block">{headingWords[0]} {headingWords[1]}</span>
             </span>
             <span aria-hidden="true" className="block overflow-hidden pb-2">
-              <motion.span variants={word} className="block text-accent-400">
-                {headingWords[2]}
-              </motion.span>
+              <span className="block text-accent-400">{headingWords[2]}</span>
             </span>
-          </motion.h1>
+          </h1>
 
           <motion.p
             variants={item}
