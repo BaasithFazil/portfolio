@@ -1,25 +1,27 @@
+import { lazy, Suspense } from "react"
 import Hero from "../components/Hero"
 import About from "../components/About"
-import Experience from "../components/Experience"
-import Education from "../components/Education"
-import Skills from "../components/Skills"
-import Projects from "../components/Projects"
-import Learning from "../components/Learning"
-import Contact from "../components/Contact"
+
+const Experience = lazy(() => import("../components/Experience"))
+const Education = lazy(() => import("../components/Education"))
+const Skills = lazy(() => import("../components/Skills"))
+const Projects = lazy(() => import("../components/Projects"))
+const Learning = lazy(() => import("../components/Learning"))
+const Contact = lazy(() => import("../components/Contact"))
 
 export default function Home() {
   return (
-    <>
-      <main>
-        <Hero />
-        <About />
+    <main>
+      <Hero />
+      <About />
+      <Suspense fallback={null}>
         <Experience />
         <Education />
         <Skills />
         <Projects />
         <Learning />
         <Contact />
-      </main>
-    </>
+      </Suspense>
+    </main>
   )
 }

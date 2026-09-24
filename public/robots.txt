@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baasithfazil.github.io/portfolio/sitemap.xml

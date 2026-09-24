@@ -199,7 +199,7 @@ export default function Hero() {
       />
       <motion.div
         aria-hidden="true"
-        className="absolute -top-32 -right-24 size-[28rem] rounded-full bg-accent-500/10 blur-[120px]"
+        className="absolute -top-32 -right-24 hidden size-[28rem] rounded-full bg-accent-500/10 blur-[120px] sm:block"
         animate={reduceMotion ? undefined : { y: [0, 40, 0] }}
         transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
       />
